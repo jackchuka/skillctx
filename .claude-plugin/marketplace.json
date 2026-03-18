@@ -1,0 +1,44 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "skillctx",
+  "description": "Make your agent skills portable by extracting hardcoded values into a central config and embedding resolver scripts",
+  "owner": {
+    "name": "jackchuka",
+    "url": "https://github.com/jackchuka"
+  },
+  "metadata": {
+    "description": "Make your agent skills more portable by centralizing skill context"
+  },
+  "plugins": [
+    {
+      "name": "skillctx",
+      "source": "./",
+      "description": "Portable agent skills \u2014 scan for hardcoded values, extract to config, and embed resolver scripts",
+      "version": "0.1.0",
+      "author": {
+        "name": "jackchuka",
+        "url": "https://github.com/jackchuka"
+      },
+      "homepage": "https://github.com/jackchuka/skillctx",
+      "repository": "https://github.com/jackchuka/skillctx",
+      "license": "MIT",
+      "keywords": [
+        "claude-code",
+        "agent",
+        "skills",
+        "context",
+        "portable",
+        "config",
+        "resolver"
+      ],
+      "category": "workflow",
+      "tags": [
+        "agent",
+        "skills",
+        "portability",
+        "config",
+        "resolver"
+      ]
+    }
+  ]
+}

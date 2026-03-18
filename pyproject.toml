@@ -1,0 +1,41 @@
+[project]
+name = "skillctx"
+version = "0.1.0"
+description = "Make your agent skills more portable by centralizing skill context"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "jackchuka" }]
+keywords = ["agent", "skills", "context", "portable"]
+
+[project.urls]
+Repository = "https://github.com/jackchuka/skillctx"
+
+[dependency-groups]
+dev = ["pytest", "pytest-cov", "ruff", "mypy"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E501"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+
+[[tool.mypy.overrides]]
+module = ["test_resolve", "test_sync", "test_sync_version"]
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+markers = ["integration: tests that run scripts via subprocess"]

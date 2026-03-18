@@ -1,0 +1,21 @@
+{
+  "name": "skillctx",
+  "version": "0.1.0",
+  "description": "Make your agent skills portable by extracting hardcoded values into a central config and embedding resolver scripts",
+  "author": {
+    "name": "jackchuka",
+    "url": "https://github.com/jackchuka"
+  },
+  "homepage": "https://github.com/jackchuka/skillctx",
+  "repository": "https://github.com/jackchuka/skillctx",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "agent",
+    "skills",
+    "context",
+    "portable",
+    "config",
+    "resolver"
+  ]
+}
